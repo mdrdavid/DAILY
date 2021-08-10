@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -10,20 +13,20 @@ body {
   height: 100%;
   width: 50%;
   position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x y: hidden;
+  overflow-x: hidden;
   padding-top: 20px;
 }
 
 .left {
   left: 0;
   background-color: rgb(69, 73, 121);
+  
 }
 
 .right {
   right: 0;
   background-color: rgb(95, 96, 107);
+  
 }
 
 .main .fees {
@@ -47,9 +50,10 @@ body {
 .aside img{
   width: 1000px;
 }
-@media screen and (min-width:768px)
+@media screen and (min-width:768px) screen and (orientation:landscape)
 {
     .left .right{
         height: 100vh;
-    }
+    } 
+    
 }

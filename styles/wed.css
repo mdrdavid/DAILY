@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: blueviolet;
+
+}
+.split{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+}
+.left {
+    left: 0;
+    background-color: rgb(69, 73, 121);
+    
+  }
+  
+  .right {
+    right: 0;
+    background-color: rgb(95, 96, 107);
+    
+  }

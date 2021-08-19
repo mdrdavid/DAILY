@@ -1,6 +1,9 @@
-const hello = "Hey there";
-console.log(hello);
-document.getElementById('demo').innerHTML=hello;
 
-let age = prompt('enter your age');
-document.getElementById('demo').innerHTML= age;
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }

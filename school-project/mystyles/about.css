@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cadetblue;
+  line-height: 1.5;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #mylinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  padding: 20px;
+  background-color: cadetblue;
+  color: #fff;
+}
+
+.main {
+  flex: 70%;
+  padding: 20px;
+  background-color: darkcyan;
+  color: #fff;
+}
+
+.row .side img {
+  align-items: center;
+  height: 180px;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.row .main img {
+  height: 400px;
+  width: 750px;
+  margin-bottom: 30px;
+}
+.main {
+  color: #fff;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .row .main img {
+    align-items: center;
+    height: 150px;
+    width: 200px;
+  }
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}

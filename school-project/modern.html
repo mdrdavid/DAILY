@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Modern Javascript</title>
+    <style>
+        body {
+            background: lightslategray;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #navbar {
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 0;
+        }
+
+        header img {
+            width: 20px;
+            height: 20px;
+            margin: auto;
+            float: right;
+        }
+
+        header span {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            line-height: 1px;
+            font-weight: normal;
+        }
+        span h1{
+            display: inline;
+            margin-left: 500px;
+        }
+
+        .button {
+            border: green 1px solid;
+            background: green;
+            padding: 10px 20px;
+            font-size: 16px;
+            display: inline-block;
+            margin-bottom: 10;
+            margin-top: 0px;
+            border-radius: 30px;
+            cursor: pointer;
+            width: 100px;
+            float: right;
+            margin: 20px 0;
+            color: white;
+        }
+
+        #content-area {
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+        }
+
+        #description {
+            font-size: 18px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .date {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .form-group input[type=text] {
+            clear: both;
+            margin-top: 200px;
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 80%;
+            background: #f1f1f1;
+        }
+
+        .form-group button {
+            margin-top: 200px;
+            float: left;
+            width: 20%;
+            height: 20px;
+            padding: 10px;
+            background: rgb(250, 128, 114);
+            color: white;
+            font-size: 18px;
+            border: 1px solid grey;
+            border-left: none;
+            /* Prevent double borders */
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background: #b5b6b8;
+        }
+
+        /* Clear floats */
+        form.form-group::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <div id="navbar"></div>
+            <div id="navbar"></div>
+            <div id="navbar"></div>
+            <span class="logo">
+                <h1>JS</h1>
+            </span>
+            <span class="button">EPUB/PDF</span>
+            <img src="images/avatar.jpg" alt="">
+        </header>
+
+        <div id="content-area">
+            <h3>The Modern Javascript Tutorial</h3>
+        </div>
+        <div id="description">
+            <p>How it's done now. From the basics to advanced topicswith simple, but detailed explanation </p>
+        </div>
+        <div class="date">21st August 2021</div>
+        <form class="form-group" action="" style="margin:auto;max-width:400px">
+            <input type="text" placeholder="Search in the tutorial" name="search">
+            <button type="submit"><i class="search"></i></button>
+        </form>
+
+    </div>
+</body>
+
+</html>
